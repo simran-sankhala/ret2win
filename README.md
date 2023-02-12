@@ -27,3 +27,19 @@ Opening the main function in radare2 we can see it’s just calling pwnme functi
  `ret2win` Function :
  
  ![](photos/pwn4.png)
+
+we can see one function is quite interesting which is never called in main or in pwnme function that is ret2win.
+Disassembling the function in radare2 we can see clearly that this function is the win function of which the challenge talks.
+
+And we have found the address of the ret2win function as `0x00400811`
+
+# Exploitation
+In order to exploit this challenge we must find the offset in our payload at which we can overwrite the RIP 
+so that we can control the RIP. After we have found the offset we can simply overwrite the RIP with the address of ret2win function.
+
+## Finding offset
+
+We can use `cyclic` tool from pwntool to generate a cyclic pattern and pass it to the binary to crash it 
+and hence generate a coredump which we can analyze to find the offset.
+
+![](photos/pwn-cyclic.png)
