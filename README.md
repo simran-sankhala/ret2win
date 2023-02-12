@@ -23,7 +23,7 @@ we can see it’s just calling pwnme function which seems vulnerable.
 
 ![](photos/pwn5.png)
 
-`pwnme` function is reading input from stdin of size 50 meanwhile the buffer is of size 32 and 
+`pwnme` function is reading input from stdin of size `56` meanwhile the buffer is of size `32` and 
  hence we have a classic buffer overflow vulnerability here and we can exploit it quite easily.
  
  `ret2win` Function :
