@@ -13,6 +13,10 @@ Opening the main function in radare2 we can see it’s just calling pwnme functi
 
 ![](photos/pwn2.png)
  
- Main Function :
+ `Main` Function :
  
  ![](photos/pwn3.png)
+
+`pwnme` Funtion :
+
+![](photos/pwn4.png)
