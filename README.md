@@ -19,4 +19,11 @@ Opening the main function in radare2 we can see it’s just calling pwnme functi
 
 `pwnme` Funtion :
 
-![](photos/pwn4.png)
+![](photos/pwn5.png)
+
+`pwnme` function is reading input from stdin of size 50 meanwhile the buffer is of size 32 and 
+ hence we have a classic buffer overflow vulnerability here and we can exploit it quite easily.
+ 
+ `ret2win` Function :
+ 
+ ![](photos/pwn4.png)
