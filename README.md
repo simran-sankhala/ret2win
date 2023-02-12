@@ -6,7 +6,7 @@ As always in order to solve any problem we must recon the problem and then under
 ## Checksec
 Running checksec on the binary reveals that the binary has only nx enabled and hence it is quite easy to exploit.
 
-![](photos/pwn1.png)
+![](photos/checksec.png)
 
 ## Static analysis
 Opening the main function in radare2 we can see it’s just calling pwnme function which seems vulnerable.
