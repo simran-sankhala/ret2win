@@ -43,3 +43,7 @@ We can use `cyclic` tool from pwntool to generate a cyclic pattern and pass it t
 and hence generate a coredump which we can analyze to find the offset.
 
 ![](photos/pwn-cyclic.png)
+
+now we can use `coredumpctl` to get the coredump of the binary.
+
+![](photos/coredump-pwn.png)
