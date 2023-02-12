@@ -31,7 +31,7 @@ Opening the main function in radare2 we can see it’s just calling pwnme functi
 we can see one function is quite interesting which is never called in main or in pwnme function that is ret2win.
 Disassembling the function in radare2 we can see clearly that this function is the win function of which the challenge talks.
 
-And we have found the address of the ret2win function as `0x00400811`
+And we have found the address of the ret2win function as `0x00400756`
 
 # Exploitation
 In order to exploit this challenge we must find the offset in our payload at which we can overwrite the RIP 
