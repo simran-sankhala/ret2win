@@ -35,7 +35,7 @@ Disassembling the function in radare2 we can see clearly that this function is t
 
 And we have found the address of the ret2win function as `0x00400756`
 
-# Exploitation
+## Exploitation
 In order to exploit this challenge we must find the offset in our payload at which we can overwrite the RIP 
 so that we can control the RIP. After we have found the offset we can simply overwrite the RIP with the address of ret2win function.
 
@@ -58,7 +58,7 @@ now again using cyclic to find the offset.
 
 ![](photos/cylic-pattern.png)
 
-# Exploit writing
+## Exploit writing
 we can just use echo to exploit this challenge as the payload is quite small.
 
 ```sh
