@@ -47,3 +47,7 @@ and hence generate a coredump which we can analyze to find the offset.
 now we can use `coredumpctl` to get the coredump of the binary.
 
 ![](photos/coredump-pwn.png)
+
+now opening the coredump in `gdb` we found the pattern which overwrote the RIP.
+
+![](photos/pwn8.png)
