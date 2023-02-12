@@ -11,7 +11,7 @@ Running checksec on the binary reveals that the binary has only nx enabled and h
 ## Static analysis
 Opening the main function in radare2 we can see it’s just calling pwnme function which seems vulnerable.
 
-![](photos/pwn2.png)
+![](photos/afl-wn.png)
  
  `Main` Function :
  
